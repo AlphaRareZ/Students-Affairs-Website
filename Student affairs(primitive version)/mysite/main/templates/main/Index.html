@@ -1,0 +1,108 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block head%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/index.css'%}">
+    <link rel="icon" type="image/fci-icon" href="{%static 'main/Images/FCAI Logo.png'%}">
+    <script src="https://kit.fontawesome.com/805d8649fd.js" crossorigin="anonymous"></script>
+    <title>Students Affair Website</title>
+{%endblock%}
+{%block content %}
+<div class="main-content">
+    <div class="container">
+        <div class="welcoming">
+            <div class="content">
+                <h1>Students Affair Website</h1>
+                <p>Here you can find all the information about the students in the university</p>
+            </div>
+            <div class="image">
+                <img src="{%static 'main/Images/student-with-book.jpg'%}" alt="">
+            </div>
+        </div>
+        <span class="separator"></span>
+        <div class="News">
+            <div class="content">
+                <h1>What's new?</h1>
+                <p>Here you can find what is new about our students</p>
+            </div>
+            <div class="image">
+                <img src="{%static 'main/Images/news.jpg'%}" alt="">
+            </div>
+        </div>
+        <span class="separator"></span>  
+    </div>
+    <div class="boxes">
+        <h1>Our features</h1>
+        <div class="container">
+            <div class="box">
+                <i class="fa-solid fa-pen-ruler fa-2xl"></i>
+                <span>Comprehensive study</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptatum cumque repudiandae adipisci voluptates? Et?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-house-laptop fa-2xl"></i>
+                <span>remote learning</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptatum cumque repudiandae adipisci voluptates? Et?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-flask-vial fa-2xl"></i>
+                <span>practical training</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptatum cumque repudiandae adipisci voluptates? Et?</p>
+            </div>
+        </div>
+    </div>
+    <div class="our-contributors">
+        <h1>Our Contributors</h1>
+        <div class="container">
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                <p><span>Name: </span>Zeyad Shahin</p>
+                <p><span>Major: </span>Computer Science</p>
+                <div class="details">
+                    <span>more details</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                <p><span>Name: </span>Mahmoud Ramadan</p>
+                <p><span>Major: </span>Computer Science</p>
+                <div class="details">
+                    <span>more details</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                <p><span>Name: </span>Saleh Chadi</p>
+                <p><span>Major: </span>ESF(مايكل فيلبس المصري)</p>
+                <div class="details">
+                    <span>more details</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                <p><span>Name: </span>Mohammed Alaa Elden</p>
+                <p><span>Major: </span>Cyper Security</p>
+                <div class="details">
+                    <span>more details</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+                <p><span>Name: </span>Noor Elden Tariq</p>
+                <p><span>Major: </span>اللي يجيبه ربنا حلو</p>
+                <div class="details">
+                    <span>more details</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+{%endblock%}

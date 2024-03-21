@@ -1,0 +1,56 @@
+.page{
+    position: relative;
+    background-color: #EEE;
+    width: 70%;
+    margin: 200px;
+    padding: 15px;
+}
+.page .content{
+    display: flex;
+    overflow: hidden;
+}
+.content #text{
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;    
+    margin-left: 15px; 
+    padding: 10px;   
+}
+.content #image{
+    width: 600px;   
+}
+.learn-more{
+    background-color: white;
+    margin: -15px;
+}
+.learn-more-btn{
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.page .content:hover{
+    opacity: 10;
+    background-color: #EEE;
+    transform: scale(1.02);
+    transition: 0.7s all ease;
+}
+.page .title:hover{
+    opacity: 10;
+    background-color: #EEE;
+    transform: scale(1.01);
+    transition: 0.7s all ease;
+}
+.learn-more-btn:hover{
+    opacity: 10;
+    background-color: blueviolet;
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}

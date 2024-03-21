@@ -1,0 +1,73 @@
+.addHeader{
+    margin-top: 20px;
+    text-align: center;
+    color: #79aca2;
+}
+form{
+    align-items: center;
+    margin-top: 30px;
+    background-color: #101222;
+    border: 5px solid #36454F;
+    border-radius: 50px;
+    padding: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 40px;
+    display: grid;
+   /* grid-template-columns: auto;*/
+    gap: 1px; 
+}
+form label{
+    color: #f0f0f0;
+}
+form p{
+    color: #f0f0f0;
+}
+form input, select{
+    margin-right: 20px;
+    background-color: #36454F;
+    border-radius: 12px;
+    /* height: 30px; */
+    font-size: large;
+    font-style: var(--main-font);
+}
+form input{
+    padding: 4px 10px;
+    transition: 0.4s;
+}
+form input:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+}
+form select{
+    transition: 0.4s;
+}
+form select:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+}
+#submit-button {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom:12px;
+    padding-top: 12px;
+    transition: 0.3s;
+}
+#submit-button:hover{
+    background-color:#1b2831 ;
+    transform: scale(1.09);
+}
+
+#delete-button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(120, 0, 0);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom:12px;
+    padding-top: 12px;
+    transition: 0.3s;
+}
+#delete-button:hover{
+    background-color:rgb(80, 0, 0) ;
+    transform: scale(1.09);
+}

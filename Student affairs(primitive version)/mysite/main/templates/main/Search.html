@@ -1,0 +1,45 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block head%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/searchStyle.css'%}">
+    <script src="{%static 'main/javascript/main.js'%}"></script>
+    <script src="{%static 'main/javascript/search.js'%}"></script>
+{%endblock%}
+
+{%block content%}
+    <div class="nav-seperator"></div>
+    <div id="searchbar">
+        <form action="{%url 'Search'%}">
+            <input type="text" placeholder="Search..." name="search" id="searchField">
+            <button type="submit" id="Go">Go</button>
+            <label for="by-status" id="status">Active</label>
+            <input type="checkbox" id="by-status">
+        </form>
+
+    </div>
+
+
+    <div id="results" class="result-container">
+        <h3 class="result-header">Search Results</h3>
+        <ul class="student-list" id="result-list">
+        </ul>
+        <table class="result-table">
+            <thead>
+                <tr class="head">
+                    <td class="id">Student ID</td>
+                    <td class="name">Name</td>
+                    <td class="status">Status</td>
+                    <td class="action">action</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+{%endblock%}

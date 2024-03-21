@@ -1,0 +1,144 @@
+:root{
+    --headings: #79aca2; 
+    --menu-color: #f0f0f0;
+    --main-font : 'Ubuntu', sans-serif;
+}
+
+
+.active-table{
+    margin-top: 160px;
+}
+
+.active-table table{
+    width: 100%;
+}
+
+.active-table .container > h1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 15px 0;
+    background-color: #212025;
+    color: white;
+    font-style: bolder;
+    border-radius: 6px;
+}
+
+.active-table .container .heading{
+    display: flex;
+    align-items: center;
+}
+
+.active-table .container .heading p{
+    flex: 1;
+    background-color: #212025;
+    margin: 2px 0;
+    color: white;
+    padding: 0 5px;
+    font-style: italic;
+}
+
+.active-table .heading form{
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.active-table .heading form button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#search{
+    width: 400px;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+}
+
+
+.active-table table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: #f3f3f3;
+    margin: 1px 0;
+}
+
+.active-table table tr td{
+    font-size: 1.5rem;
+}
+
+.active-table table tr td.num{
+    color: crimson;
+    padding-left: 20px;
+}
+
+.active-table table tr td.id{
+    font-size: 1rem;
+}
+
+.active-table table tr td.status-h{
+    padding-right: 20px;
+    color: #212025
+}
+
+.active-table table tr td.status .button{
+    position: relative;
+}
+
+.active-table table tr td.status .button .tooltiptext{
+    display: none;
+    width: 100px;
+    font-size: 0.5rem;
+    background-color: #212025;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    left: -150%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.active-table table tr td.status .button:hover .tooltiptext{
+    display: inline-block;
+}
+
+.active-table table tr td.status .button button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #79aca2;
+    background-color: transparent;
+    transition: 0.3s all ease;
+}
+
+
+.active-table table tbody{
+    display: block;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--headings); 
+}

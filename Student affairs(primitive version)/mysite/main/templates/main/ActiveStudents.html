@@ -1,0 +1,48 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block head%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/activeStudents.css'%}">
+    <script src="https://kit.fontawesome.com/805d8649fd.js" crossorigin="anonymous"></script>
+    <title>Active Students</title>
+{%endblock%}
+{%block content%}
+    <div class="active-table">
+        <div class="container">
+            <h1>Active Students</h1>
+            <div class="heading">
+                <p>Here you can find every student's status</p>
+                <form action="">
+                    <input type="text" id="search" placeholder="Enter student's Id">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <tr class="head">
+                        <td class="num">#</td>
+                        <td class="id">Student ID/Name</td>
+                        <td class="status-h">Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for x in stud %}
+                        <tr>
+                            <td class="num">#{{forloop.counter}}</td>
+                            <td class="id">{{x.id}}/{{x.name}}</td>
+                            <td class="status">
+                                <div class="button">
+                                    <button onclick="changeStatus(event,{{x.id}})">{{x.status}}</button>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>       
+        </div>
+    </div>
+    <script src="{%static 'main/javascript/activeStudent.js'%}"></script>
+{%endblock%}

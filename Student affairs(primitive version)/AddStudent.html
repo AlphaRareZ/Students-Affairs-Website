@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="icon" type="image/fci-icon" href="Images/FCAI Logo.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/student.css">
+    <script src="javascript/main.js"></script>
+    <script src="javascript/addStudent.js"></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="container">
+            <a href="Index.html">Student Affair</a>
+            <ul>
+                <li><a href="search.html">search</a></li>
+                <li class="student">Students
+                    <ul class="student">
+                        <li><a href="AddStudent.html">Add New Student</a></li>
+                        <li><a href="UpdateInformation.html">Update Student's Information</a></li>
+                        <li><a href="ActiveStudents.html">Active Students</a></li>
+                        <li><a href="Top10.html">Top 10</a></li>
+                    </ul>
+                </li>
+                
+                <!-- <li>News</li> -->
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="addHeader">Add New Student</h1>
+    <form onsubmit="checkValidation(event)">
+        <label for="id">ID:</label><br>
+        <input type="number" name="id" id="id" required autocomplete="off"><br>   
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" name="email" id="email"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" name="phone" id="phone" maxlength="11"><br>
+        <label for="date">Date of birth:</label><br>
+        <input type="date" name="date" id="date" required><br>
+        <label for="gpa">GPA:</label><br>
+        <input type="text" name="gpa" id="gpa" required><br>
+        <p>Gender</p>
+        <br>
+        <div class="radio">
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+        </div>
+        <br>
+        <label for="lvl">Level:</label><br>
+        <select name="level" id="lvl">
+            <option value="1">First Level</option>
+            <option value="2">Second Level</option>
+            <option value="3">Third Level</option>
+            <option value="4">fourth Level</option>
+        </select><br>
+        <label for="stat">Status:</label><br>
+        <select name="stat" id="stat">
+            <option value="active">Active</option>
+            <option value="inactive">inactive</option>
+        </select><br>
+        <label for="dep">Departments:</label><br>
+        <select name="dep" id="dep">
+            <option value="general">General</option>
+            <option value="CS">CS</option>
+            <option value="IS">IS</option>
+            <option value="AI">AI</option>
+            <option value="it">IT</option>
+            <option value="ds">DS</option>
+        </select><br>
+        <input type="submit" name="" id="submit-button">
+    </form>
+</body>
+</html>

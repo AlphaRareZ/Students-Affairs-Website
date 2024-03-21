@@ -1,0 +1,43 @@
+.student-container
+{
+    text-align: center;
+    background-color: #79aca2;
+    color: white;
+        border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-style: var(--main-font);
+}
+p{
+    margin: 5px;
+}
+button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #79aca2;
+    color: white;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: 800;
+    transition: 0.3s all ease;
+}
+  
+button:hover {
+    transform: scale(1.09);
+}
+button:disabled
+{
+    background-color: #405f59;
+}
+select{
+    transition: 0.4s;
+    margin: 20px;
+    border-radius: 12px;
+    font-size: large;
+    font-style: var(--main-font);
+}
+select:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+}

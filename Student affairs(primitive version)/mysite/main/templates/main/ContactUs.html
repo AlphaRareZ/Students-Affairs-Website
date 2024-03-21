@@ -1,0 +1,33 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block head%}
+    <script src="https://kit.fontawesome.com/0b8998af7c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/contactUs.css'%}">
+    <title>Contact us</title>
+{%endblock%}
+{%block content%}
+    <p>You can Contact us for complaints and improvements in follows</p>
+    <div class="lstDiv">
+
+        <ul class="lst">
+            <li class="facebook"><div class="title"><i class="fa-brands fa-square-facebook" style="color: #4a73ba;"></i> Facebook</div>
+                <div>Use our new Facebook service. You can contact us via facebook web if you're on a desktop, or your normal app on your mobile </div>
+                <div class="div_button"><a class="button" href="https://facebook.com"target="_blank" >Message us</a></div></li>
+
+            <li class="twitter"><div class="title"><i class="fa-brands fa-twitter" style="color: #5dcdfd;"></i> Twitter</div>
+                <div>Use our new Twitter service. You can contact us via Twitter web if you're on a desktop, or your normal app on your mobile </div>
+                <div class="div_button"><a class="button" href="https://twitter.com"target="_blank">Message us</a></div></li>
+
+
+            <li class="gmail"><div class="title"><i class="fa-regular fa-envelope" style="color: #b53b3b;"></i> Email</div>
+                <div class="div_button" >You can contact us via email whether it's gmail or yahoo, just drop a text to us<br> Expect a fast reply</div>
+                <div class="div_button"><a class="button" href="https://gmail.com"target="_blank">Message us</a></div></li>
+
+
+        </ul>
+    </div>
+{%endblock%}

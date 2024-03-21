@@ -1,0 +1,26 @@
+{%extends 'main/base.html'%}
+{%load static%}
+{%block head%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/AboutUs.css'%}">
+    <title>About us</title>
+{%endblock%}
+{%block content%}
+    <div class="page">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="content">
+            <p id = "text">We work to provide services and support for students and drive student learning outside of the classroom at institutions of higher education.</p>
+            <img id = "image" src="Images/IMGG.svg" alt="">
+        </div>
+        <div class="learn-more">
+            <button type="button" class="learn-more-btn">
+                Learn More
+            </button>
+        </div>
+    </div>
+{%endblock%}

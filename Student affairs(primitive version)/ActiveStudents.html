@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activeStudents.css">
+    <script src="javascript/main.js"></script>
+    <script src="https://kit.fontawesome.com/805d8649fd.js" crossorigin="anonymous"></script>
+    <title>Active Students</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="container">
+            <a href="Index.html">Student Affair</a>
+            <ul>
+                <li><a href="search.html">search</a></li>
+               <li class="student">Students
+                    <ul class="student">
+                        <li><a href="AddStudent.html">Add New Student</a></li>
+                        <li><a href="UpdateInformation.html">Update Student's Information</a></li>
+                        <li><a href="ActiveStudents.html">Active Students</a></li>
+                        <li><a href="Top10.html">Top 10</a></li>
+                    </ul>
+                </li>
+                
+                <!-- <li>News</li> -->
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="active-table">
+        <div class="container">
+            <h1>Active Students</h1>
+            <div class="heading">
+                <p>Here you can find every student's status</p>
+                <form action="">
+                    <input type="text" id="search" placeholder="Enter student's Id">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <tr class="head">
+                        <td class="num">#</td>
+                        <td class="id">Student ID/Name</td>
+                        <td class="status-h">Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>       
+        </div>
+    </div>
+    
+    <script src="javascript/activeStudent.js"></script>
+</body>
+</html>
